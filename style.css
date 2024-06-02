@@ -1,0 +1,383 @@
+body {
+position: relative;
+font-family: 'Noto Sans', sans-serif;
+font-size: 16px;
+Line-height: 1.4;
+color: white;
+min-width: 320px;
+overflow-x: hidden;
+height: auto;
+background-color: rgba(0, 0, 0, 0.925);
+background-image: url(fon.png);
+background-repeat: repeat-x;
+}
+
+/* Заголовки */
+
+.text-One{
+  text-align: center;
+  padding-top: 100px;
+  font-size: 25px;
+}
+
+/* Вспылающее окно */
+
+.popup__bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  opacity: 1;
+  transition: 0.5s all;
+}
+
+.popup-bg.active{
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.popup{
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 400px;
+  padding: 25px;
+}
+
+.close-popup{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.popup label{
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+  }
+
+  .popup .label__text{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 5px;
+  }
+
+  .popup input{
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+  }
+
+  .popup input:focus{
+    border-bottom: 1px solid blue;
+  }
+
+  .popup input:focus + .label__text{
+    color: blue;
+  }
+  
+  .popup h1{
+    color: black;
+    font-size: 27px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .popup p{
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+  } 
+
+  .popup button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    background-color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 100px;
+  }
+
+
+  .popup button:hover{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 100px;
+    color: black;
+    transition: 0.5s all;
+  }
+
+
+/* Меню навигации */
+
+.navbar {
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    background-color: rgba(34, 33, 35, 1);
+    position: sticky;
+    top: 0;
+    max-width: 1000px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar .container{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    List-style-type: none;
+    padding-Left: 0;
+    margin-bottom: 0;
+}
+
+.navbar-menu li{
+  display: inline-block;
+}
+
+.navbar-menu li a{
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .navbar-menu li a:hover{
+    opacity: 1;
+  }
+
+  .navbar-wrap{
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .callback{
+    margin-left: 30px;
+    padding: 10px 30px;
+    background-color: black;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+    margin-right: 40px;
+    border: 2px solid white;
+  }
+  
+  .callback:hover{
+    transform: scale(1.04);
+    color: #fff;
+  }
+
+  .navbar-brand{
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    filter: 
+    drop-shadow(3px 3px 15px white)
+  }
+
+  /* Блоки */
+
+  .all{
+    display: flex;
+    justify-content: center;
+  }
+
+  .bblock {
+    float: left;
+    line-height: 20px;
+    font-size: 40px;
+    background: rgba(34, 33, 35, 1);
+    color: rgba(255, 255, 255, 0.814);
+    margin-top: 370px;
+    width: 400px;
+    margin-right: 30px;
+    text-align: center;
+    border-radius: 20px;
+   }
+
+   .bblock h1{
+    font-size: 50px;
+   }
+
+   .bblock p{
+    font-size: 25px;
+   }
+
+
+   /* Авто */
+
+   .autopark{
+    img {width: 500px; height: 300px;};
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+    }
+
+   .auto p{
+    font-size: 20px;
+    text-align: left;
+
+   }
+   
+   .auto h1{
+    text-align: center;
+    font-size: 24px;
+   }
+
+
+   /* Преимущества */
+   
+    .prem{
+    display: flex;
+    justify-content: center;
+    } 
+
+  .vid {
+    float: left;
+    font-size: 40px;
+    background: rgba(34, 33, 35, 1);
+    color: rgba(255, 255, 255, 0.814);
+    margin-top: 20px;
+    width: 400px;
+    height: 150px;
+    margin-right: 30px;
+    border-radius: 20px;
+   }
+
+   .vid p{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 40px;
+   }
+
+   .vid p:hover{
+    filter: 
+    drop-shadow(3px 3px 15px white)
+   }
+
+   /* Вопросы */
+
+  .accordion{
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .accordion .contentBx{
+    position: relative;
+    margin: 10px 20px;
+    font-size: 24px;
+  }
+
+  .accordion .contentBx p{
+    font-size: 20px;
+    margin: 10px 20px;
+  }
+
+  .accordion .contentBx .label{
+    position: relative;
+    padding: 15px;
+    background: rgba(34, 33, 35, 1);
+    color: white;
+    cursor: pointer;
+  }
+
+  .accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+  }
+
+  .accordion .contentBx.active .label::before{
+    content: '-';
+  }
+
+  .accordion .contentBx .content{
+    position: relative;
+    background: rgba(34, 33, 35, 1);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    }
+
+    .accordion .contentBx.active .content{
+      height: 80px;
+      padding: 10px;
+    }
+
+    /* Зключение */
+
+    .table{
+      margin-top: 40px;
+    }
+
+    .logos{
+      text-align: center;
+      font-size: 60px;
+      filter: 
+      drop-shadow(3px 3px 15px white)
+    }
+
+    .made{
+      margin-top: 40px;
+      color: rgba(34, 33, 35, 1);
+    }
+
+    .nomer{
+      text-align: left;
+      font-size: 50px;
+    }
+
+    .mail{
+      text-align: left;
+      font-size: 30px;
+    }
+    
+    .adres{
+      text-align: left;
+      text-decoration: underline;
+    }
+   
+
+
+
+
+
+
+
