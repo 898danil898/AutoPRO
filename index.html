@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AutoPRO</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+           <a href="#" class="navbar-brand">AutoPRO</a>
+
+           <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                  <li><a href="#autopark">Автопарк</a></li>
+                  <li><a href="#preim">Наши преимущества</a></li>
+                  <li><a href="#vopros">Частые вопросы</a></li>
+                  <li><a href=>+7 (800) 555-35-35</a></li>
+               </ul>
+
+             <button class="callback" type="button" onclick="window.myDialog.showModal()">Заказать авто</button>
+          </div>
+
+        </div>
+
+    </nav>
+
+
+ <div class="text-One">
+  <h1>
+    АРЕНДА АВТО ПРЕМИУМ <br>
+    КЛАССА В ТОЛЬЯТТИ
+  </h1>
+ </div>
+
+
+<dialog id="myDialog">
+ <div class="popup__bg">
+  <form class="popup">
+    <img src="close.png" alt="" class="close-popup" onclick="window.myDialog.close()">
+    <h1> ОСТАВИТЬ ЗАЯВКУ </h1>
+    <p>Мы свяжемся с вами в течение 5 минут</p>
+    <label>
+      <input type="text" name="name">
+      <div class="label__text">
+        Ваше имя
+      </div>
+    </label>
+    <label>
+      <input type="tel" name="tel">
+      <div class="label__text">
+        Ваш телефон
+      </div>
+    </label>
+    <button type="submit">Оставить заявку</button>
+  </form>
+</div>
+</dialog>
+
+
+<div class="all">
+<div class="bblock">
+  <h1> 3 </h1>
+  <p>Автомобиля в автопарке</p>
+</div>
+<div class="bblock">
+  <h1> 5 </h1>
+  <p>Лет на рынке</p>
+</div>
+<div class="bblock">
+  <h1> 100 </h1>
+  <p>клиентов в год</p>
+</div>
+</div>
+ 
+
+<div class="text-One" id="autopark">
+  <h1>НАШ АВТОПАРК</h1>
+</div>
+
+
+<div class="autopark">
+  <div class="auto">
+    <img src="BMW.png">
+    <p>BMW M3 <br>
+      Автоматическая коробка передач <br>
+      192 лошадиные силы<br>
+      Расход 6.2 л </p>
+    <h1>20000 руб/сутки</h1>
+  </div>
+  
+  
+  <div class="auto">
+    <img src="mersedes.png">
+    <p>Mercedes Benz CLS 550 <br>
+      Автоматическая коробка передач <br>
+      408 лошадиных сил<br>
+      Расход 4.1 л </p>
+    <h1>20000 руб/сутки</h1>
+  </div>
+  
+  <div class="auto">
+    <img src="Rols.png">
+    <p>Rolls Royce Wraith Black badge <br>
+      Автоматическая коробка передач <br>
+      632 лошадиных сил<br>
+      Расход 14.6 л  </p>
+    <h1>50000 руб/сутки</h1>
+  </div>
+</div>
+
+
+
+   
+  <div class="text-One" id="preim">
+    <h1>НАШИ ПРЕИМУЩЕСТВА</h1>
+  </div>
+
+
+
+  <div class="prem">
+    <div class="vid">
+      <p>КАСКО И ОСАГО на всех авто</p>
+    </div>
+    <div class="vid">
+      <p>Полная конфиденциальность</p>
+    </div>
+    <div class="vid">
+      <p>Круглосуточная тех. поддержка</p>
+    </div>
+    </div>
+
+      <div class="prem">
+    <div class="vid">
+      <p>Отличное состояние автомобилей</p>
+    </div>
+    <div class="vid">
+      <p>Подача и забор авто в любой точке Тольятти</p>
+    </div>
+    </div>
+
+   
+    <div class="text-One" id="vopros">
+      <h1>
+        ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+      </h1>
+     </div>
+
+     <div class="accordion">
+      <div class="contentBx">
+        <div class="label">Что нужно для оформления?</div>
+        <div class="content">
+          <p>Права, паспорт, (регистрация для иностранных граждан) кисарт, СНИЛС, 
+            справка об отсутствии судимости, (для иностранных граждан справка рф и домашняя)</p>
+        </div>
+      </div>
+
+      <div class="contentBx">
+        <div class="label">Какие условия страховани?</div>
+        <div class="content">
+          <p>Все автомобили застрахованы по ОСАГО и КАСКО без ограничений</p>
+        </div>
+      </div>
+
+      <div class="contentBx">
+        <div class="label">Есть ли доставка и забор автомобиля?</div>
+        <div class="content">
+          <p>Да, мы привозим и забираем автомобиль по удобному Вам адресу. <br>
+            Услуга бесплатна</p>
+        </div>
+      </div>
+
+      <div class="contentBx">
+        <div class="label">Будет ли меняться стоимость аренды?</div>
+        <div class="content">
+          <p>Нет. Мы заключаем с вами договор, где фиксируется стоимость аренды.</p>
+        </div>
+      </div>
+      </div>
+   
+<script src="script.js"></script>
+
+<div class="table">
+<table style="width:100%" border="0">
+  <tr>
+    <th style="width:50%">
+      <div class="logos">AutoPRO</div>
+    </th>
+
+    <th style="width:50%">
+      <div class="nomer"> +7 (800) 555-35-35 </div>
+      <div class="mail">AutoPro@mail.ru </div>
+      <div class="adres"> Степана разина 8</div>
+    </th>
+  </tr>
+  </table>
+</div>
+   
+</body>
+</html>
